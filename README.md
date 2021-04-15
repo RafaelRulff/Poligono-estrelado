@@ -1,53 +1,18 @@
-# Poligono-estrelado Padrao do Triangulo Esquerdo Pascal
+# Poligono-estrelado Padrao do Triangulo de Estrelas
 
-rows = 5
 
-i = 1
+# ----codescracker.com----
 
-while i <= rows:
+print("Full Pyramid Pattern of Stars (*): ")
 
-    j = i
+for i in range(5):
+
+    for s in range(-6, -i):
     
-    while j < rows:
+        print(" ", end="")
+        
+    for j in range(i+1):
     
-        # display space
-        
-        print(' ', end=' ')
-        
-        j += 1
-        
-    k = 1
-    
-    while k <= i:
-    
-        print('*', end=' ')
-        
-        k += 1
+        print("* ", end="")
         
     print()
-    
-    i += 1
-
-i = rows
-
-while i >= 1:
-
-    j = i
-    
-    while j <= rows:
-    
-        print(' ', end=' ')
-        
-        j += 1
-        
-    k = 1
-    
-    while k < i:
-    
-        print('*', end=' ')
-        
-        k += 1
-        
-    print('')
-    
-    i -= 1
